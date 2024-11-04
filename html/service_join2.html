@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>증권 웹페이지</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+	<meta name="description" content="증권웹페이지">
+
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+</head>
+
+<body>
+
+<header>
+	<div class="inner">
+		<div class="logo"><h1><a href="index.html">해외주식정보</a></h1></div>
+		<div class="nav">
+			<ul class="gnb" id="menu">
+				<!-- <li data-menuanchor="anchor1"><a href="#anchor1">서비스 소개</a></li> -->
+				<li><a href="index.html">서비스 소개</a></li>
+				<li><a href="service_guide.html">서비스 이용방법</a></li>
+				<li class="active"><a href="service_join1.html">가입/해지/환불</a></li>
+				<li><a href="notice.html">공지사항</a></li>
+			</ul>
+		</div>
+		<div class="btn_menu_toggle"><button type="button"><span>메뉴열기</span></button></div>
+	</div>
+</header>
+
+<div class="guide_fullpage">
+
+	<div class="section visual join">
+		<div class="visual">
+			<h2>해외주식정보<br />
+				이동통신사 유료부가서비스</h2>
+		</div>
+	</div>
+
+
+	<div class="contant">
+
+		<div class="service_join_wrap">
+
+			<div class="service_tab_wrap">
+				<div class="tab">
+					<a href="service_join1.html"><span>서비스 가입</span></a>
+					<a href="service_join2.html" class="active"><span>서비스 해지</span></a>
+					<a href="#g"><span>서비스 환불</span></a>
+				</div>
+				<ul>
+					<li>
+						<div>
+							<span class="icon"><img src="../images/icon_service.png" alt="아이콘"></span>
+							<dl>
+								<dt><strong>서비스 해지 안내</strong></dt>
+								<dd>
+									<p><em class="em">서비스 해지 시 30일 내 재가입이 불가 합니다.</em></p>
+								</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div>
+							<span class="icon"><img src="../images/icon_cost.png" alt="아이콘"></span>
+							<dl>
+								<dt><strong>서비스 요금</strong></dt>
+								<dd>
+									<p><strong class="em price">5,500원(부가세포함)</strong></p>
+									<p><em class="em">* 유료 서비스로, 사용일 수 만큼 일할 계산되어 과금됩니다.</em></p>
+								</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</div><!-- // service_tab_wrap -->
+
+			<div class="telecom">
+				<p class="tit">통신사</p>
+				<div>
+					<ul class="radio">
+						<li class="w20 mR0">
+							<input type="radio" id="divide01" name="telCdRadio" checked="" value="SKT" class="telCdRadioSkt">
+							<label for="divide01"><span>SKT</span></label>
+						</li>
+						<li class="mR0">
+							<input type="radio" id="divide02" name="telCdRadio" value="KT" class="telCdRadioKt" disabled="disabled">
+							<label for="divide02"><span>KT</span></label>
+						</li>
+						<li>
+							<input type="radio" id="divide03" name="telCdRadio" value="LGT" class="telCdRadioLgt">
+							<label for="divide03"><span>LG U+</span></label>
+						</li>
+					</ul>
+					<p class="txt">※ KT 는 추후 서비스 제공 예정입니다.</p>
+				</div>
+			</div>
+
+			<div class="phone_certify_wrap">
+				<div class="tit">
+					<strong>휴대폰 번호</strong>
+					<span>* 서비스 이용 시, 휴대폰 인증이 필요합니다.</span>
+				</div>
+				<div>
+					<div class="phoneNum">
+						<div class="ipt_input"><input type="number" class="input" placeholder="휴대폰 번호를 입력 해 주세요"></div>
+						<div><button type="button" class="btn_cert"><span>인증번호요청</span></button></div>
+					</div>
+					<div class="certify_wrap">
+						<div class="ipt_input">
+							<input type="number" class="input" placeholder="인증번호를 입력 해 주세요">
+							<span class="timer">유효시간 : 03:00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="agree_wrap" id="skt">
+				<div><label><input type="checkbox" class="agree all" checked><span class="checkmark"></span><span class="txt">전체선택</span></label></div>
+				<ul>
+					<li><label><input type="checkbox" class="agree item" required><span class="checkmark"></span></label><span class="txt" onclick="">서비스 이용 약관</span></li>
+					<li><label><input type="checkbox" class="agree item" required><span class="checkmark"></span></label><span class="txt" onclick="">개인정보 수집 및 이용 동의</span></li>
+					<li><label><input type="checkbox" class="agree item" required><span class="checkmark"></span></label><span class="txt" onclick="">SKT 개인정보 제3자 제공</span></li>
+					<li><label><input type="checkbox" class="agree item" required><span class="checkmark"></span></label><span class="txt" onclick="">개인정보 제3자 제공</span></li>
+					<li><label><input type="checkbox" class="agree item"><span class="checkmark"></span></label><span class="txt" onclick="">광고 동의(선택)</span></li>
+				</ul>
+			</div> -->
+			<!-- // agree_wrap -->
+
+			<!-- <div class="join_footer">
+				<button type="button"><span>주식정보 유료가입하기</span></button>
+				<p>
+					<em>매월 부가세 포함 5,500원<br />
+					본 서비스는 통신요금에 부가세포함 매월 5,500원이 부과됩니다.</em>
+				</p>
+			</div> -->
+
+			<div class="join_footer">
+				<button type="button" id="confirmBtn"><span><strong>해외주식정보</strong> 유료서비스 해지</span></button>
+				<p>본 서비스는 <em>월 5,500원(부가세포함)의 유료 서비스</em>로,사용일 수 만큼 일할 계산되어 과금됩니다.</p>
+			</div>
+
+
+		</div><!-- // service_join_wrap -->
+
+	</div><!-- // contant -->
+
+	
+	<div class="section fp-auto-height" id="section4">
+		<div class="footer_wrap">
+			<footer class="footer">
+				<div class="company_info">
+					<h2>(주)아톤/(주)에이티애널리틱스</h2>
+					<address>서울시 영등포구 여의대로108, 26층(파크원타워1)</address>
+					<div>
+						<p>Tel : 02. 786. 4273</p>
+						<p>Fax : 02. 786. 4273</p>
+					</div>
+				</div>
+				<div class="site_info">
+					<!-- <p>이용약관</p> -->
+					<button type="button" class="openService"><span>이용약관</span></button>
+					<button type="button" class="openPrivacy"><span>개인정보 처리방침</span></button>
+				</div>
+				<div class="customer">
+					<dl>
+						<dt>고객센터</dt>
+						<dd>
+							<p>1800. 1637</p>
+							<p>1800. 4283</p>
+						</dd>
+						<dd><p>평일 09:00~18:00 (점심시간 제외, 주말/공휴일 휴무)</p></dd>
+					</dl>
+				</div>
+				<p class="copyright">Copyright &copy;© 2022 ATON Inc. All rights reserved.</p>
+			</footer>
+		</div><!-- // footer_wrap -->
+	</div><!-- // #section5 -->
+
+
+</div><!-- // guide_fullpage -->
+
+
+
+<!-- 풀페이지 약관 -->
+<div class="layer full" id="privacy_01" style="display:none;">
+	<div class="header">
+		<h1>서비스 이용안내</h1>
+		<div class="tools-btn">
+			<button type="button" class="btn_close"><span>닫기</span></button>
+		</div>
+	</div>
+	<div class="layer_content">
+		<div class="privacy_wrap">
+			<pre>
+				서비스 이용안안내. 이용안안내. 이용안안내. 이용안안내. 이용안안내. 이용안안내. 이용안안내.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />1내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />
+				내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />2내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />
+				내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />3내용이 들어갑니다.<br />내용이 들어갑니다.<br />내용이 들어갑니다.<br />
+			</pre>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="../js/temp.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$(".layer.full div.header div.tools-btn button").on("click", function(){
+			$(this).closest(".layer").hide();
+		})
+
+		/* 가입창 약관 클릭시 팝업보기 테스트 */
+		$("#test").on("click", function(){
+			$("#privacy_01").show();
+		})
+
+
+		function stockTelChk(){
+			let tel_items = document.querySelectorAll(".telecom input[type='radio'");
+			let btn_submit_txt = document.querySelector("#confirmBtn strong");
+			let telService = ['해외주식정보', 'AT 해외주식정보', 'PASS 해외주식정보']
+
+			// 아이템 클릭시 
+			tel_items.forEach(function(item,index){
+				item.addEventListener("click", function(){
+					btn_submit_txt.textContent = telService[index];
+				})
+			})
+		}
+		stockTelChk()
+		
+	})
+</script>
+
+
+
+</body>
+</html>
