@@ -212,7 +212,7 @@
 
 
 
-<div class="layer privacy" id="" style="display:block;">
+<div class="layer privacy" id="" style="display:none;">
 	<div class="inner">
 		<div class="layer_header">
 			<h2>개인정보 수집 및 이용동의</h2>
@@ -280,7 +280,14 @@
 	btn_layer.addEventListener("click", () => {
 		document.querySelector(".layer.privacy").style.display = "block"; /* id값은 변경 가능. */
 	})
-	/* // 팝업 띄우기 */
+	/* // 팝업 띄우기 테스트 */
+
+	/* 팝업 닫기 테스트 */
+	let btn_close = document.querySelector(".layer .btn_close");
+	btn_close.addEventListener("click", () => {
+		document.querySelector(".layer").style.display = "none";
+	})
+	/* // 팝업 닫기 테스트 */
 </script>
 
 
