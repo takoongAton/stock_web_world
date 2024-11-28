@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>증권 웹페이지</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+	<meta name="description" content="증권웹페이지">
+
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=block">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+</head>
+
+<body>
+	
+<header>
+	<div class="inner">
+		<div class="logo"><h1><a href="index.html">해외주식정보</a></h1></div>
+		<div class="nav">
+			<ul class="gnb" id="menu">
+				<!-- <li data-menuanchor="anchor1"><a href="#anchor1">서비스 소개</a></li> -->
+				<li><a href="index.html">서비스 소개</a></li>
+				<li><a href="service_guide.html">서비스 이용방법</a></li>
+				<li><a href="service_join1.html">가입/해지/환불</a></li>
+				<li class="active"><a href="notice.html">공지사항</a></li>
+			</ul>
+		</div>
+		<div class="btn_menu_toggle"><button type="button"><span>메뉴열기</span></button></div>
+	</div>
+</header>
+
+<div class="guide_fullpage">
+
+	<div class="section visual refund">
+		<div class="visual">
+			<h2>1:1 문의하기</h2>
+		</div>
+	</div>
+
+	<div class="contant">
+		<div class="customer_wrap">
+
+			<div class="customer_form" style="max-width:1200px; margin:0 auto;">
+	
+				<div class="loan_group">
+	
+					<div class="form_wrap">
+		
+						<div class="row">
+							<div class="tit"><strong>문의유형</strong></div>
+							<div class="ipt_form">
+								<div class="ipt_wrap">
+									<div class="select_set">
+										<select name="" id="">
+											<option value="문의 유형을 선택하세요." selected="" disabled="" hidden="">문의 유형을 선택하세요.</option>
+											<option value="문의 유형 선택1">문의 유형 선택1</option>
+											<option value="문의 유형 선택2">문의 유형 선택2</option>
+										</select>
+									</div>
+								</div>
+								<div class="form_alert">
+									<p class="em">문의유형을 선택해주세요.</p>
+								</div>
+							</div>
+						</div>
+		
+		
+						<div class="row">
+							<div class="tit"><strong>문의내용</strong></div>
+							<div class="ipt_form">
+								<div class="ipt_wrap">
+									<div class="ipt_set">
+										<div><input type="text" placeholder="제목을 입력해주세요."></div>
+									</div>
+								</div>
+								<div class="form_alert">
+									<p class="em">제목을 입력해주세요.</p>
+								</div>
+	
+								<div class="ipt_wrap">
+									<div class="textarea_set">
+										<div>
+											<textarea name="" id="" placeholder="문의 내용을 입력하세요."></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="form_alert">
+									<p class="em">문의 내용을 입력해주세요.</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="row">
+							<div class="tit"><strong>E-MAIL</strong></div>
+							<div class="ipt_form">
+								<div class="ipt_wrap">
+									<div class="ipt_set">
+										<input type="text" placeholder="이메일을 입력하세요.">
+									</div>
+								</div>
+	
+								<div class="form_alert">
+									<p class="em">이메일 형식을 확인해주세요.</p>
+								</div>
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="tit"><strong>휴대폰번호</strong></div>
+							<div class="ipt_form">
+								<div class="ipt_wrap">								
+									<div class="select_set" style="width:180px;">
+										<select name="" id="">
+											<option value="통신사" selected="" disabled="" hidden="">통신사</option>
+											<option value="SKT">SKT</option>
+											<option value="LG U+">LG U+</option>
+											<option value="KT">KT</option>
+										</select>
+									</div>
+									<div class="ipt_set">
+										<input type="text" placeholder="휴대폰번호를 입력하세요.">
+									</div>
+								</div>
+								<div class="form_alert">
+									<p class="em">휴대폰번호를 입력해주세요.</p>
+								</div>
+							</div>
+						</div>
+	
+						<!-- <div class="title">
+							<strong>대출약정서 동의 [필수]</strong>
+						</div> -->
+						<div class="agree_wrap">
+							<div class="chk_all">
+								<label>
+									<input type="checkbox" class="agree all" checked="">
+									<span class="checkmark"></span>
+								</label>
+								<button type="button" class="btn_popup"><span class="txt">개인정보 수집 및 이용동의</span></button>
+							</div>
+						
+							<div class="btn_group">
+								<div>
+									<button type="button"><span>문의하기</span></button>
+								</div>
+							</div>
+						</div>
+						<!-- // agree_wrap -->
+		
+						<br>
+		
+					</div>
+					<!-- // form_wrap -->
+		
+				</div>
+				
+			</div>
+			<!-- // customer_form -->
+	
+		</div>
+		<!-- // customer_wrap -->
+
+	</div>
+	<!-- // content -->
+
+	
+	<div class="section fp-auto-height" id="section4">
+		<div class="footer_wrap">
+			<footer class="footer">
+				<div class="company_info">
+					<h2>(주)아톤/(주)에이티애널리틱스</h2>
+					<address>서울시 영등포구 여의대로108, 26층(파크원타워1)</address>
+					<div>
+						<p>Tel : 02. 786. 4273</p>
+						<p>Fax : 02. 786. 4273</p>
+					</div>
+				</div>
+				<div class="site_info">
+					<!-- <p>이용약관</p> -->
+					<button type="button" class="openService"><span>이용약관</span></button>
+					<button type="button" class="openPrivacy"><span>개인정보 처리방침</span></button>
+				</div>
+				<div class="customer">
+					<dl>
+						<dt>고객센터</dt>
+						<dd>
+							<p>1800. 1637</p>
+							<p>1800. 4283</p>
+						</dd>
+						<dd><p>평일 09:00~18:00 (점심시간 제외, 주말/공휴일 휴무)</p></dd>
+					</dl>
+				</div>
+				<p class="copyright">Copyright &copy;© 2022 ATON Inc. All rights reserved.</p>
+			</footer>
+		</div><!-- // footer_wrap -->
+	</div><!-- // #section5 -->
+
+
+</div><!-- // guide_fullpage -->
+
+
+<button class="toTop"><span><img src="../images/icon_top.png" alt="맨위로"></span></button>
+
+
+
+
+<div class="layer privacy" id="" style="display:block;">
+	<div class="inner">
+		<div class="layer_header">
+			<h2>개인정보 수집 및 이용동의</h2>
+			<button type="button" class="btn_close"><span>닫기</span></button>
+		</div>
+		<div class="layer_content">
+
+			<div class="txt_content">
+				개인정보 수집 동의 관련 내용이 들어갑니다.<br />
+				내용이 들어갑니다.
+				내용이 들어갑니다.
+				내용이 들어갑니다.
+				체크박스 옆 텍스트 클릭시 팝업 뜸.
+			</div>
+			<!-- // txt_content -->
+
+			<!-- <div class="btn_group">
+				<button type="button"><span>동의</span></button>
+			</div> -->
+			<!-- // btn_group -->
+		</div>
+		<!-- // layer_content  -->
+	</div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="../js/temp.js"></script>
+<script>
+	$(document).ready(function(){
+
+		// $(".board_list .item .board_tit").on("click", function(){
+		// 	$(this).parent(".item").toggleClass("active")
+		// })
+	})
+
+	/* select용 샘플 */
+	let selectElement = document.querySelectorAll("select");
+	if(selectElement.length > 0) {
+		console.log(selectElement.length)
+		selectElement.forEach(element => {
+			let isOpen = false;
+			element.addEventListener("click", function(){
+				if(isOpen == false) {
+					isOpen = true;
+				} else {
+					isOpen = false;
+					element.blur();
+				}
+			})
+			element.addEventListener("change", function(){
+				element.classList.add("changed");
+			})
+			element.addEventListener("blur", function(){
+				isOpen = false;
+			})
+		});
+	}
+	/* // select용 샘플 */
+
+	/* 팝업 띄우기 테스트 */
+	let btn_layer = document.querySelector(".agree_wrap .btn_popup")
+	btn_layer.addEventListener("click", () => {
+		document.querySelector(".layer.privacy").style.display = "block"; /* id값은 변경 가능. */
+	})
+	/* // 팝업 띄우기 */
+</script>
+
+
+</body>
+</html>
