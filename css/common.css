@@ -2590,13 +2590,39 @@ div.layer.alert .btn_group button {
   color: #fff;
   font-size: 18px;
   line-height: 1.5em;
-  font-size: bold;
+  font-weight: bold;
 }
 
 .refund_wrap .inner div.txt_wrap span.txt br {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .refund_wrap {
+    height: auto;
+    padding: 1em 0;
+  }
+  .refund_wrap .inner div.tit strong {
+    font-size: 1.125em;
+  }
+  .refund_wrap .inner div.txt_wrap {
+    margin-top: 8px;
+  }
+  .refund_wrap .inner div.txt_wrap button {
+    width: 84px;
+    height: 32px;
+  }
+  .refund_wrap .inner div.txt_wrap button span {
+    font-size: 12px;
+    line-height: 2.66666em;
+  }
+  .refund_wrap .inner div.txt_wrap span.txt {
+    font-size: 12px;
+  }
+  .refund_wrap .inner div.txt_wrap span.txt br {
+    display: block;
+  }
+}
 /* // 메인 1:1 문의 추가 */
 /* .customer_form {padding:96px 0 120px;} */
 /* 입력폼 */
