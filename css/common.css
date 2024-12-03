@@ -2599,8 +2599,8 @@ div.layer.alert .btn_group button {
 
 @media screen and (max-width: 768px) {
   .refund_wrap {
-    height: auto;
-    padding: 1em 0;
+    height: 120px;
+    background-position: center center;
   }
   .refund_wrap .inner div.tit strong {
     font-size: 1.125em;
