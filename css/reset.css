@@ -16,9 +16,7 @@ ins, u {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-   -ms-text-size-adjust: none;
-       text-size-adjust: none;
+  text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
 }
@@ -168,10 +166,10 @@ label {
 }
 
 input, textarea, button, select {
+  -webkit-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   font-size: inherit;
   font-family: inherit;
 }
@@ -221,16 +219,12 @@ body {
 
 /* 텍스트 및 숫자 관련 입력 폼 */
 input[type=checkbox] {
-  -webkit-appearance: radio;
-     -moz-appearance: radio;
-          appearance: radio;
+  appearance: radio;
 }
 
 input[type=radio] {
   border-radius: 100%;
-  -webkit-appearance: radio;
-     -moz-appearance: radio;
-          appearance: radio;
+  appearance: radio;
 }
 
 /* 선택, 입력 비활성화 */
